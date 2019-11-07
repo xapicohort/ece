@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>xAPI ECE Project - JQuery</title>
+        <!-- jquery javascript links -->
+        <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        <!-- jquery css links -->
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+ 
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous"/>
+              
+                <!-- xAPI Wrapper -->
+                <script src="js/cryptojs_v3.1.2.js"></script>
+                <script src="js/xapiwrapper.js"></script>
+                
+                <!-- Custom JS -->
+                <script src="js/pickUp.js"></script>
+    </head>
+
+    <body onload="pageLoaded()">
+        <div data-role="page" id="dpickUp">
+            <div data-role="header">
+                <h1>Pick Up Child</h1>
+            </div>
+            <div data-role="content">
+                <div class="ui-field-contain">
+                    <fieldset data-role="controlgroup">
+                        <div>
+                            <label for="comment">Guardian</label>
+                            <input type="text" name="guardian" id="guardian" value="" onchange="saveGuardianName()" /><br />
+                        </div>
+                        <label for="select-choice-child">Child</label>
+                        <select name="select-choice-child" id="select-choice-child" onchange="saveChildName()">
+                            <option>Child</option>
+                            <option value="child_001">child_001</option>
+                            <option value="child_002">child_002</option>
+                            <option value="child_003">child_003</option>
+                            <option value="child_004">child_004</option>
+                            <option value="child_005">child_005</option>
+                        </select>
+                        <label for="select-choice-caregiver">Caregiver</label>
+                        <select name="select-choice-caregiver" id="select-choice-caregiver" onchange="saveCaregiverName()">
+                            <option>Caregiver</option>
+                            <option value="caregiver_001">caregiver_001</option>
+                            <option value="caregiver_002">caregiver_002</option>
+                            <option value="caregiver_003">caregiver_003</option>
+                            <option value="caregiver_004">caregiver_004</option>
+                            <option value="caregiver_005">caregiver_005</option>
+                        </select>
+                        <div>
+                            <button data-role="button" data-inline="true" onclick="send_statement_pickedUp()">Picked Child Up</button>
+                        </div>
+                    </fieldset>
+                </div>
+                
+   
+                
+            </div>
+            <div data-role="footer" data-position="fixed"></div>
+        </div>
+    </body>
+</html>
