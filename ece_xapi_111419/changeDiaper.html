@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>xAPI ECE Project</title>
+        <!-- jquery javascript links -->
+        <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        <!-- jquery css links -->
+        <link rel="stylesheet"
+            href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+            integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
+            crossorigin="anonymous" />
+
+        <!-- xAPI Wrapper -->
+        <script src="js/cryptojs_v3.1.2.js"></script>
+        <script src="js/xapiwrapper.js"></script>
+
+        <!-- Custom JS -->
+        <script src="js/changeDiaper.js"></script>
+    </head>
+
+    <body onload="pageLoaded()">
+        <div data-role="page" id="changeDiaper">
+            <div data-role="header">
+                <h1>Bladder and Bowel Control</h1>
+            </div>
+            <div data-role="content">
+                <div class="ui-field-contain">
+                    <fieldset data-role="controlgroup">
+                        <label for="select-child">Child</label>
+                        <select name="select-child" id="select-child"
+                            onchange="saveChildName()">
+                            <option>Child</option>
+                            <option value="child_001">child_001</option>
+                            <option value="child_002">child_002</option>
+                            <option value="child_003">child_003</option>
+                            <option value="child_004">child_004</option>
+                            <option value="child_005">child_005</option>
+                        </select>
+                    </fieldset>
+                </div>
+                <div class="ui-field-contain">
+                    <fieldset data-role="controlgroup">
+                        <input type="checkbox" name="checkbox-urinated" id="checkbox-urinated"
+                            class="custom" />
+                        <label for="checkbox-urinated">Urinated</label>
+                        <select id="autonomously_urinated" onchange="autonomously_urinated()">
+                            <option>On his/her own?</option>
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select>
+                        <div>
+                            <button data-role="button" data-inline="true"
+                                onclick="send_statement_urinated()">Record</button>
+                        </div>
+                    </fieldset>
+                    <br />
+                    <fieldset data-role="controlgroup">
+                        <input type="checkbox" name="checkbox-defecated" id="checkbox-defecated"
+                            class="custom" />
+                        <label for="checkbox-defecated">Defecated</label>
+                        <select id="autonomously_defecated" onchange="autonomously_defecated()">
+                            <option>On his/her own?</option>
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select>
+                        <div>
+                            <button data-role="button" data-inline="true"
+                                onclick="send_statement_defecated()">Record</button>
+                        </div>
+                    </fieldset>
+                </div>
+                <br/>
+                <div class="ui-field-contain">
+                    <fieldset data-role="controlgroup">
+                        <label for="select-caregiver">Diaper Change</label>
+                        <select name="select-caregiver" id="select-caregiver"
+                            onchange="saveCaregiverName()">
+                            <option>Caregiver changed diaper</option>
+                            <option value="caregiver_001">caregiver_001</option>
+                            <option value="caregiver_002">caregiver_002</option>
+                            <option value="caregiver_003">caregiver_003</option>
+                            <option value="caregiver_004">caregiver_004</option>
+                            <option value="caregiver_005">caregiver_005</option>
+                        </select>
+                        <div>
+                            <label for="comment">Comments:</label>
+                            <input type="text" name="name" id="comment" value=""
+                                onchange="saveComment()" />
+                        </div>
+                        <div>
+                            <button data-role="button" data-inline="true"
+                                onclick="send_statement_changedDiaper()">Record</button>
+                        </div>
+                    </fieldset>
+                </div>
+            </div>
+            <div data-role="footer"></div>
+        </div>
+    </body>
+</html>
