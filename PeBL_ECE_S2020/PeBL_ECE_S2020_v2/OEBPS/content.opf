@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<package xmlns="http://www.idpf.org/2007/opf" unique-identifier="uuid_id" version="2.0">
+    <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:opf="http://www.idpf.org/2007/opf" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+        <dc:title>Getting Started with PeBL for ECE</dc:title>
+
+        <dc:language>en</dc:language>
+
+        <dc:identifier id="uuid_id" opf:scheme="uuid">isbn-000-0-000-00000-0</dc:identifier>
+        <dc:creator>PeBL xAPI Cohort ECE</dc:creator>
+        <dc:publisher>xAPI Cohort ECE</dc:publisher>
+        <dc:date>2020-01-01</dc:date>
+
+        <meta name="cover" content="my-cover-image"/>
+
+    </metadata>
+    <manifest>
+        <item href="bookcover.xhtml" id="bookcover" media-type="application/xhtml+xml"/>
+        <item href="title.xhtml" id="title" media-type="application/xhtml+xml"/>
+        <item href="toc.xhtml" id="toc" media-type="application/xhtml+xml"/>
+        <item href="chap01.xhtml" id="chap01" media-type="application/xhtml+xml"/>
+        <item href="chap02.xhtml" id="chap02" media-type="application/xhtml+xml"/>
+        <item href="chap03.xhtml" id="chap03" media-type="application/xhtml+xml"/>
+        <item href="chap04.xhtml" id="chap04" media-type="application/xhtml+xml"/>
+        <item href="chap05.xhtml" id="chap05" media-type="application/xhtml+xml"/>
+        <item href="chap06.xhtml" id="chap06" media-type="application/xhtml+xml"/>
+        <item href="chap06.xhtml" id="chap07" media-type="application/xhtml+xml"/>
+        <item href="chap06.xhtml" id="chap08" media-type="application/xhtml+xml"/>
+        
+    
+    
+        <item href="image/cover.jpg" id="my-cover-image" media-type="image/jpeg"/>
+        <item href="image/20717_lores.jpg" id="" media-type="image/png"/>
+       
+<item id="F96E2F4F-AE3D-4C9A-BD93-C5E5A9C19692" href="https://www.youtube.com/v/iSKMkHKhocQ?version=3" media-type="application/x-shockwave-flash"/>
+<item id="chap03" href="chap03.xhtml" media-type="application/xhtml+xml" properties="remote-resources"/>
+
+        <item href="css/stylesheet.css" id="cascadingstylesheet" media-type="text/css"/>
+        <item href="css/pebl.css" id="peblcss" media-type="text/css"/>
+        <item href="css/pebl-askExpert-widget.css" id="pebl-askExpert-widget" media-type="text/css"/>
+<item href="css/pebl-carousel-widget.css" id="pebl-carousel-widget" media-type="text/css"/>
+<item href="css/pebl-contentMorphing-widget.css" id="pebl-contentMorphing-widget" media-type="text/css"/>
+<item href="css/pebl-dataEntry-widget.css" id="pebl-dataEntry-widget" media-type="text/css"/>
+<item href="css/pebl-discussion-widget.css" id="pebl-discussion-widget" media-type="text/css"/>
+<item href="css/pebl-figure-widget.css" id="pebl-figure-widget" media-type="text/css"/>
+<item href="css/pebl-hotword-widget.css" id="pebl-hotword-widget" media-type="text/css"/>
+<item href="css/pebl-popout-widget.css" id="pebl-popout-widget" media-type="text/css"/>
+<item href="css/pebl-quiz-widget.css" id="pebl-quiz-widget" media-type="text/css"/>
+<item href="css/pebl-showHide-widget.css" id="pebl-showHide-widget" media-type="text/css"/>
+<item href="css/pebl-variables.css" id="pebl-variables" media-type="text/css"/>
+<item href="css/variables.css" id="variables" media-type="text/css"/>
+        
+        
+        <item href="toc.ncx" id="tableofcontents" media-type="application/x-dtbncx+xml"/>
+
+    </manifest>
+    <spine toc="tableofcontents">
+        <itemref idref="bookcover" linear="no"/>
+        <itemref idref="title"/>
+        <itemref idref="toc"/>
+        <itemref idref="chap01"/>
+        <itemref idref="chap02"/>
+        <itemref idref="chap03"/>
+        <itemref idref="chap04"/>
+        <itemref idref="chap05"/>
+        <itemref idref="chap06"/>
+        <itemref idref="chap07"/>
+        <itemref idref="chap08"/>
+    </spine>
+    <guide>
+        <reference href="bookcover.xhtml" title="Cover Image" type="cover"/>
+        <reference href="toc.xhtml" title="Table Of Contents" type="toc"/>
+    </guide>
+</package>
