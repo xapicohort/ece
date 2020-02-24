@@ -1,4 +1,3 @@
 # ece
-Early Childhood Education Profile
-Practice learning JavaScript using recipes from ECE xAPI
+Exploring Early Childhood Education Profile and xAPI
 https://registry.tincanapi.com/#profile/61
