@@ -1,0 +1,62 @@
+{
+    "actor": {
+        "mbox": "mailto:child01@exexapi.com",
+        "name": "child01",
+        "objectType": "Agent"
+    },
+    "verb": {
+        "id": "http://adlnet.gov/expapi/verbs/mastered",
+        "display": {
+            "en-US": "mastered"
+        }
+    },
+    "object": {
+        "id": "http://www.ecexapi.com/ece/competencies/competency",
+        "definition": {
+            "name": {
+                "en-US": "Competency Name"
+            },
+            "description": {
+                "en-US": "Competency Description"
+            },
+            "type": "http://www.ecexapi.com/ece/competencies"
+        },
+        "objectType": "Activity"
+    },
+    "result": {
+        "score": {
+            "scaled": 1
+        },
+        "response": "an observation related to the acquirement of the competence by the child",
+        "duration": "PT5M"
+    },
+    "context": {
+        "contextActivities": {
+            "category": [
+                {
+                    "id": "http://www.ecexapi.com/ece/framework"
+                }
+            ],
+            "other": [
+                {
+                    "id": "http://www.ecexapi.com/ece/competency"
+                }
+            ]
+        }
+    },
+    "attachments": [
+        {
+            "usageType": "http://www.ecexapi.com/ece/evidence/competency",
+            "display": {
+                "en-US": "The Evidence"
+            },
+            "description": {
+                "en-US": "Evidence Description"
+            },
+            "contentType": "video/mp4",
+            "length": 123,
+            "sha2": "",
+            "fileUrl": "http://www.ecexapi.com/ece/fileUrl"
+        }
+    ]
+}
