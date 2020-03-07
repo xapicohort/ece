@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>xAPI Makey Makey</title>
+	<!-- Mobile Specific Metas -->
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+  	<!-- Bootstrap CSS -->
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+
+  	<!-- Custom CSS -->
+	  <link rel="stylesheet" type="text/css" href="css/project.css">
+	
+
+	<!-- xAPI Wrapper -->
+	<script src="js/cryptojs_v3.1.2.js"></script>
+	<script src="js/xapiwrapper.js"></script>
+
+	<!-- Custom JS -->
+	<script src="js/project.js"></script>
+
+
+</head>
+
+<body>
+
+	<div class="container">
+		
+		<h5>Makey Makey Practice</h5>
+		
+
+		
+
+		<!-- script container -->
+		<div>
+			<script type="text/javascript">
+				document.onkeydown = function(event) {
+					switch (event.keyCode) {
+					   case 32:
+					   selectSpacebar();
+						  break;
+					   case 37:
+					   selectLeftArrow();
+						  break;
+					   case 38:
+					   selectUpArrow();
+						  break;
+					   case 39:
+					   selectRightArrow();
+						  break;
+					   case 40:
+					   selectDownArrow();
+						  break;
+					}
+				};
+			</script>
+
+
+		</div>
+
+	</div>
+
+
+</body>
+
+</html>
