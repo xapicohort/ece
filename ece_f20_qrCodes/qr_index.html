@@ -1,0 +1,31 @@
+<!--https://davidshimjs.github.io/qrcodejs/ -->
+<html>
+<head>
+<title>QR codes</title>
+
+</head>
+<body>
+<input type="text" id="qr-data" onchange="generateQR()">
+<div id="qrcode"></div>
+
+<script src="js/qrcode.min.js" type="text/javascript"></script>
+<script>
+    var qrdata = document.getElementById("qr-data");
+    var qrcode = new QRCode(document.getElementById("qrcode"));
+
+    function generateQR(){
+        var data = qrdata.value;
+        
+        qrcode.makeCode(data);
+       
+
+
+    }
+</script>
+</body>
+
+
+
+
+
+</html>
